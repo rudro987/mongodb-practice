@@ -99,4 +99,15 @@ db.test.updateOne(
 );
 
 
+db.test.updateOne(
+    {_id: ObjectId("654dbfa0ac03b4ef85f2a906")},
+    {
+        $set: {
+            "address.city": "Dhaka",
+            "address.postalCode": "1216",
+            "address.country": "Bangladesh"
+        }
+    }
+)
+
 
